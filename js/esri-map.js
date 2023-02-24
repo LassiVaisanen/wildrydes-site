@@ -67,7 +67,7 @@ WildRydes.map = WildRydes.map || {};
 
         view.watch('extent', updateExtent);
         view.watch('center', updateCenter);
-        view.then(function onViewLoad() {
+        view.when(function onViewLoad() {
             updateExtent(view.extent);
             updateCenter(view.center);
         });
